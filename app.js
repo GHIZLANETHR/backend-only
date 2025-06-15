@@ -44,6 +44,12 @@ app.post('/api/chat/messages', (req, res) => {
 app.get("/", (req, res) => {
   res.send("✅ Backend en ligne via Railway !");
 });
+app.get('/test-db', (req, res) => {
+  db.query('SELECT 1 + 1 AS result', (err, results) => {
+    if (err) return res.status(500).json({ error: err.message });
+    res.json({ message: 'Connexion DB OK', result: results[0].result });
+  });
+});
 
 const authRoutes = require('./routes/authRoutes');
 const clientRoutes = require('./routes/clientRoutes'); // 
