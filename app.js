@@ -6,6 +6,7 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
 const app = express();
+const db = require('../config/db');
 app.use(cors());
 app.use(express.json());
 // Ajoutez cette section avant les autres routes
@@ -46,8 +47,11 @@ app.get("/", (req, res) => {
 });
 app.get('/test-db', (req, res) => {
   db.query('SELECT 1 + 1 AS result', (err, results) => {
-    if (err) return res.status(500).json({ error: err.message });
-    res.json({ message: 'Connexion DB OK', result: results[0].result });
+    if (err) {
+      console.error('Erreur MySQL :', err);
+      return res.status(500).json({ error: 'Erreur de connexion à la base de données' });
+    }
+    res.json({ message: 'Connexion DB OK ✅', result: results[0].result });
   });
 });
 
