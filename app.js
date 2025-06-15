@@ -6,7 +6,7 @@ const dotenv = require('dotenv');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const db = require('../config/db');
+const db = require('./config/db');
 app.use(cors());
 app.use(express.json());
 // Ajoutez cette section avant les autres routes
