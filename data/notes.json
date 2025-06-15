@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1749571659747,
+    "title": "Nouvelle note",
+    "preview": "Ajoutez du contenu...",
+    "lastModified": "Modifié maintenant",
+    "content": "# Nouvelle note\nCrée le 10 juin 2025 • Dernière modification maintenant\n\nAjoutez du contenu ici..."
+  },
+  {
+    "id": 1747688287309,
+    "title": "Nouvelle note",
+    "preview": "Ajoutez du contenu...",
+    "lastModified": "Modifié maintenant",
+    "content": "# Nouvelle note\nCrée le 19 mai 2025 • Dernière modification maintenant\n\nAjoutez du contenu ici..."
+  },
+  {
+    "id": 1,
+    "title": "Réunion stratégique",
+    "preview": "Points clés discutés lors du briefing...",
+    "lastModified": "Modifié aujourd'hui",
+    "content": "# Réunion stratégique\n\n## Points clés..."
+  },
+  {
+    "id": 2,
+    "title": "Idées pour le projet",
+    "preview": "Liste des fonctionnalités à implémenter...",
+    "lastModified": "Modifié hier",
+    "content": "# Idées pour le projet\n\n..."
+  }
+]
