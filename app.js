@@ -41,6 +41,10 @@ app.post('/api/chat/messages', (req, res) => {
     res.status(500).json({ error: 'Failed to send message' });
   }
 });
+app.get("/", (req, res) => {
+  res.send("✅ Backend en ligne via Railway !");
+});
+
 const authRoutes = require('./routes/authRoutes');
 const clientRoutes = require('./routes/clientRoutes'); // 
 const taskRoutes = require('./routes/taskRoutes');
